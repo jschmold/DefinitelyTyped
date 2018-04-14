@@ -47,7 +47,7 @@ declare module Mongo {
             reactive?: boolean;
             transform?: Function;
         }): T;
-        insert(doc: T, callback?: Function): string;
+        insert(doc: T, callback?: Function): ObjectID;
         rawCollection(): any;
         rawDatabase(): any;
         remove(selector: Selector | ObjectID | string, callback?: Function): number;
